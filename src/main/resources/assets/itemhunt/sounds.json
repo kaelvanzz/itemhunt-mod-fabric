@@ -1,0 +1,29 @@
+{
+    "pling": {
+        "sounds": ["itemhunt:pling"]
+    },
+    "orb": {
+        "sounds": ["itemhunt:orb"]
+    },
+    "hat": {
+        "sounds": ["itemhunt:hat"]
+    },
+    "levelup": {
+        "sounds": ["itemhunt:levelup"]
+    },
+    "growl1": {
+        "sounds": ["itemhunt:growl1"]
+    },
+    "growl2": {
+        "sounds": ["itemhunt:growl2"]
+    },
+    "growl3": {
+        "sounds": ["itemhunt:growl3"]
+    },
+    "growl4": {
+        "sounds": ["itemhunt:growl4"]
+    },
+    "challenge_complete": {
+        "sounds": ["itemhunt:challenge_complete"]
+    }
+}

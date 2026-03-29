@@ -1,0 +1,23 @@
+{
+    "schemaVersion": 1,
+    "id": "itemhunt",
+    "version": "${version}",
+    "name": "Item Hunt",
+    "description": "A minigame ItemHunt mod for Minecraft 1.21.4",
+    "authors": ["kryozzz_"],
+    "contact": {},
+    "license": "MIT",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.example.itemhunt.ItemHuntMod"
+        ]
+    },
+    "mixins": [],
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "minecraft": "~1.21.4",
+        "java": ">=21",
+        "fabric-api": "*"
+    }
+}

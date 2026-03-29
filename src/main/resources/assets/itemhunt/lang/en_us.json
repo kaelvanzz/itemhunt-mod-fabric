@@ -1,0 +1,17 @@
+{
+  "itemhunt.command.start": "Start the game",
+  "itemhunt.command.end": "Force end the game and show scores",
+  "itemhunt.command.roundtime": "Set round time in seconds",
+  "itemhunt.command.rounds": "Set number of rounds",
+  "itemhunt.command.mode.colors": "Set game mode to color",
+  "itemhunt.command.mode.name": "Set game mode to name (english/chinese)",
+  "itemhunt.game.started": "Game started! Round %d",
+  "itemhunt.game.ended": "Game ended. Final scores:",
+  "itemhunt.round.timeup": "Time up! Moving to next round.",
+  "itemhunt.player.wins": "%s wins the round!",
+  "itemhunt.tip.noyetstarted": "Game mode not set. Use /itemhunt mode first.",
+  "itemhunt.mode.colors": "Colors",
+  "itemhunt.mode.name": "Name (English/Chinese)",
+  "itemhunt.mode.english": "English",
+  "itemhunt.mode.chinese": "Chinese"
+}

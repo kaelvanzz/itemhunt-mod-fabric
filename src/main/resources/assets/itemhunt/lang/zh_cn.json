@@ -1,0 +1,17 @@
+{
+  "itemhunt.command.start": "开始游戏",
+  "itemhunt.command.end": "强制结束游戏并显示分数",
+  "itemhunt.command.roundtime": "设置回合时长（秒）",
+  "itemhunt.command.rounds": "设置回合数",
+  "itemhunt.command.mode.colors": "设置游戏模式为颜色",
+  "itemhunt.command.mode.name": "设置游戏模式为名字（英文/中文）",
+  "itemhunt.game.started": "游戏已开始！第 %d 回合",
+  "itemhunt.game.ended": "游戏已结束。最终分数：",
+  "itemhunt.round.timeup": "时间到！进入下一回合。",
+  "itemhunt.player.wins": "%s 赢得了本回合！",
+  "itemhunt.tip.noyetstarted": "游戏模式未设置，请先使用 /itemhunt mode",
+  "itemhunt.mode.colors": "颜色",
+  "itemhunt.mode.name": "名字（英文/中文）",
+  "itemhunt.mode.english": "英文",
+  "itemhunt.mode.chinese": "中文"
+}
