@@ -358,8 +358,16 @@ public class ItemDataManager {
             itemName = itemId.substring(itemId.indexOf(":") + 1).toLowerCase();
         }
         
-        // Check if item name starts with the letter
         char lowerLetter = Character.toLowerCase(letter);
+        
+        // Special handling for minecart items
+        // Items like hopper_minecart, tnt_minecart, furnace_minecart, chest_minecart
+        // have IDs that don't start with 'm' but display names start with "Minecart"
+        if (lowerLetter == 'm' && itemName.contains("minecart")) {
+            return true;
+        }
+        
+        // Check if item name starts with the letter
         return !itemName.isEmpty() && itemName.charAt(0) == lowerLetter;
     }
     

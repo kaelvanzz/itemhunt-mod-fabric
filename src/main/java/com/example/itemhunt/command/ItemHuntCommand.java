@@ -90,6 +90,13 @@ public class ItemHuntCommand {
                                 })
                         )
                 )
+                .then(CommandManager.literal("skip")
+                        .executes(ctx -> {
+                            ItemHuntGame.INSTANCE.skipRound(ctx.getSource().getServer());
+                            ctx.getSource().sendFeedback(() -> Text.literal("Round skipped!"), false);
+                            return 1;
+                        })
+                )
         );
     }
 }

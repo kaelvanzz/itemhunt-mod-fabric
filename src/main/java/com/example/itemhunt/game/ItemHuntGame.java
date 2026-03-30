@@ -280,6 +280,35 @@ public class ItemHuntGame {
         playSoundToAll(server, "growl" + growlNum);
     }
 
+    private void showRoundSkippedTitle(MinecraftServer server) {
+        for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
+            Text title;
+            
+            // English mode or Color mode - use English text
+            if (currentMode == ENGLISH || currentMode == COLORS) {
+                title = Text.literal("Round Skipped!").formatted(Formatting.YELLOW, Formatting.BOLD);
+            } else {
+                // Chinese mode - use Chinese text
+                title = Text.literal("回合已跳过！").formatted(Formatting.YELLOW, Formatting.BOLD);
+            }
+            
+            sendTitle(player, title, null, 10, 40, 10);
+        }
+        playSoundToAll(server, "pling");
+    }
+
+    public void skipRound(MinecraftServer server) {
+        if (!gameRunning || !roundActive) {
+            return;
+        }
+        
+        showRoundSkippedTitle(server);
+        resetAllItems();
+        roundActive = false;
+        updateSidebarDisplay(server);
+        startNewRoundAfterDelay(40);
+    }
+
     private void createSidebarObjective(MinecraftServer server) {
         ServerScoreboard scoreboard = server.getScoreboard();
         
