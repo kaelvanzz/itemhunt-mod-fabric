@@ -265,7 +265,6 @@ public class ItemDataManager {
         map.put("pink_petals", "pink");
         map.put("coral", "pink");
         map.put("sea_pickle", "green");
-        map.put("sea_lantern", "cyan");
         map.put("heart_of_the_sea", "cyan");
         map.put("nautilus_shell", "white");
         map.put("scute", "cyan");
@@ -281,7 +280,7 @@ public class ItemDataManager {
         map.put("spyglass", "brown");
         map.put("shears", "white");
         map.put("lead", "brown");
-        map.put("name_tag", "white");
+        map.put("name_tag", "yellow");
         map.put("saddle", "brown");
         map.put("experience_bottle", "yellow");
         map.put("dragon_breath", "purple");
@@ -315,6 +314,14 @@ public class ItemDataManager {
         map.put("brush", "brown");
         map.put("pottery_shard", "brown");
         map.put("pottery_sherd", "brown");
+        map.put("porkchop", "red");
+        map.put("beef", "red");
+        map.put("mutton", "red");
+        map.put("chicken" , "white");
+        map.put("rabbit", "white");
+        map.put("cod", "white");
+        map.put("salmon", "red");
+        map.put("potion", "blue");
         
         COLOR_ALIASES = Collections.unmodifiableMap(map);
         
@@ -326,7 +333,7 @@ public class ItemDataManager {
         multiMap.put("oxidized", Set.of("green", "cyan"));
         multiMap.put("waxed_weathered", Set.of("green", "cyan"));
         multiMap.put("waxed_oxidized", Set.of("green", "cyan"));
-        
+        multiMap.put("sea_lantern", Set.of("white", "blue"));
         MULTI_COLOR_ALIASES = Collections.unmodifiableMap(multiMap);
     }
     
