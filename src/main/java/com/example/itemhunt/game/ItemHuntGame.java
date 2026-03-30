@@ -64,7 +64,7 @@ public class ItemHuntGame {
     private String prevTargetLine = "";
     private List<String> prevPlayerLines = new ArrayList<>();
 
-    private final Set<String> englishLetters = Set.of("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","W","Y","Z");
+    private final Set<String> englishLetters = Set.of("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","W","Y");
     private final Set<String> chinesePinyinLetters = Set.of("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","w","x","y","z");
     
     // Custom color for brown (hex: #894933)
@@ -303,7 +303,7 @@ public class ItemHuntGame {
         }
         
         showRoundSkippedTitle(server);
-        resetAllItems();
+        resetAllItems(server);
         roundActive = false;
         updateSidebarDisplay(server);
         startNewRoundAfterDelay(40);
@@ -534,7 +534,7 @@ public class ItemHuntGame {
                 playerScores.get(player).addScore(1);
                 double timeSeconds = (currentServerTick - roundStartTime) / 20.0;
                 showWinnerTitle(server, player, timeSeconds);
-                resetAllItems();
+                resetAllItems(server);
                 roundActive = false;
                 updateSidebarDisplay(server);
                 startNewRoundAfterDelay(60);
@@ -605,8 +605,9 @@ public class ItemHuntGame {
         return false;
     }
 
-    private void resetAllItems() {
-        for (ServerPlayerEntity p : playerScores.keySet()) {
+    private void resetAllItems(MinecraftServer server) {
+        // Clear inventory for ALL online players, not just those in playerScores
+        for (ServerPlayerEntity p : server.getPlayerManager().getPlayerList()) {
             p.getInventory().clear();
         }
     }
@@ -617,7 +618,7 @@ public class ItemHuntGame {
             return;
         }
 
-        resetAllItems();
+        resetAllItems(server);
         startCountdown(server);
     }
 
