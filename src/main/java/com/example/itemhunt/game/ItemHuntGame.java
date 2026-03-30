@@ -64,7 +64,7 @@ public class ItemHuntGame {
     private String prevTargetLine = "";
     private List<String> prevPlayerLines = new ArrayList<>();
 
-    private final Set<String> englishLetters = Set.of("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","W","Y");
+    private final Set<String> englishLetters = Set.of("A","B","C","D","E","F","G","H","I","J", "K", "L","M","N","O","P","Q","R","S","T","W","Y");
     private final Set<String> chinesePinyinLetters = Set.of("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","w","x","y","z");
     
     // Custom color for brown (hex: #894933)
@@ -419,7 +419,7 @@ public class ItemHuntGame {
             case "purple": return "§5";
             case "pink": return "§d";
             case "gray": return "§7";
-            case "brown": return "§x§8§9§4§9§3§3"; // Custom brown color #894933 using JSON color format
+            case "brown": return "§6"; // Use gold color as fallback for brown (scoreboard doesn't support RGB)
             case "black": return "§0";
             case "white": return "§f";
             case "orange": return "§6";

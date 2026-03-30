@@ -36,7 +36,7 @@ public class ItemDataManager {
         // Wood types
         map.put("oak", "brown");
         map.put("spruce", "brown");
-        map.put("birch", "brown");
+        map.put("birch", "white");
         map.put("jungle", "brown");
         map.put("acacia", "orange");
         map.put("dark_oak", "brown");
@@ -64,7 +64,7 @@ public class ItemDataManager {
         map.put("bricks", "red");
         
         // Prismarine
-        map.put("prismarine", "blue");
+        map.put("prismarine", "cyan");
         
         // Nether blocks
         map.put("nether_brick", "black");
@@ -89,7 +89,6 @@ public class ItemDataManager {
         // map.put("oxidized", ...);
         
         // Other common mappings
-        map.put("crimson", "red");
         map.put("warped", "cyan");
         map.put("nether_wart", "red");
         map.put("blaze", "yellow");
@@ -102,6 +101,7 @@ public class ItemDataManager {
         map.put("ocean", "blue");
         map.put("redstone", "red");
         map.put("slime", "green");
+        map.put("lime", "green");
         map.put("grass", "green");
         map.put("vine", "green");
         map.put("leaf", "green");
@@ -151,11 +151,11 @@ public class ItemDataManager {
         map.put("log", "brown");
         map.put("plank", "brown");
         map.put("dirt", "brown");
-        map.put("sand", "brown");
+        map.put("sand", "yellow");
         map.put("stone", "gray");
         map.put("cobblestone", "gray");
         map.put("terracotta", "brown");
-        map.put("clay", "white");
+        map.put("clay", "blue");
         map.put("apple", "red");
         map.put("beef", "red");
         map.put("salmon", "red");
@@ -235,7 +235,7 @@ public class ItemDataManager {
         map.put("glow_berries", "yellow");
         map.put("cocoa", "brown");
         map.put("sugar", "white");
-        map.put("wheat_seeds", "brown");
+        map.put("wheat_seeds", "green");
         map.put("pumpkin_seeds", "orange");
         map.put("melon_seeds", "brown");
         map.put("beetroot_seeds", "brown");
@@ -314,18 +314,30 @@ public class ItemDataManager {
         map.put("brush", "brown");
         map.put("pottery_shard", "brown");
         map.put("pottery_sherd", "brown");
-        map.put("porkchop", "red");
-        map.put("beef", "red");
+        map.put("porkchop", "pink");
+        map.put("cooked_porkchop", "white");
         map.put("mutton", "red");
+        map.put("cooked_mutton", "brown");
         map.put("chicken" , "white");
-        map.put("rabbit", "white");
-        map.put("cod", "white");
-        map.put("salmon", "red");
         map.put("potion", "blue");
+        map.put("sugar_cane", "green");
+        map.put("sand", "yellow");
+        map.put("grass_block", "green");
+        map.put("lily_pad", "green");
+        map.put("purpur", "purple");
+        map.put("sandstone", "yellow");
+        map.put("end_stone", "yellow");
+        map.put("basalt", "gray");
+        map.put("heavy_weighted", "white");
+        map.put("light_weighted", "yellow");
+        map.put("bell", "yellow");
+        map.put("scaffolding", "yellow");
+        map.put("sandstone", "yellow");
+        
         
         COLOR_ALIASES = Collections.unmodifiableMap(map);
         
-        // Multi-color aliases
+        // Multi color aliases
         Map<String, Set<String>> multiMap = new HashMap<>();
         multiMap.put("mangrove", Set.of("red", "brown"));
         multiMap.put("pale_oak", Set.of("white", "gray"));
@@ -334,6 +346,8 @@ public class ItemDataManager {
         multiMap.put("waxed_weathered", Set.of("green", "cyan"));
         multiMap.put("waxed_oxidized", Set.of("green", "cyan"));
         multiMap.put("sea_lantern", Set.of("white", "blue"));
+        multiMap.put("crimson", Set.of("red", "purple"));
+
         MULTI_COLOR_ALIASES = Collections.unmodifiableMap(multiMap);
     }
     
