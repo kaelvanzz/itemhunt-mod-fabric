@@ -64,7 +64,7 @@ public class ItemHuntGame {
     private String prevTargetLine = "";
     private List<String> prevPlayerLines = new ArrayList<>();
 
-    private final Set<String> englishLetters = Set.of("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z");
+    private final Set<String> englishLetters = Set.of("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","W","Y","Z");
     private final Set<String> chinesePinyinLetters = Set.of("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","w","x","y","z");
     
     // Custom color for brown (hex: #894933)
